@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Hero from "../components/hero/Hero";
 
 export default function Home() {
   return (
@@ -9,7 +10,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.svg" />
       </Head>
 
-      <main></main>
+      <main>
+        <Hero />
+      </main>
     </div>
   );
 }

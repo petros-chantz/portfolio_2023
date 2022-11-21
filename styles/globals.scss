@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Inter", sans-serif;
+    color: white;
+    // background-color: black;
+  }
+  h1 {
+    @apply text-5xl leading-tight lg:text-5xl font-light xl:leading-tight xl:text-7xl selection:bg-white selection:text-black;
+  }
+
+  h2 {
+    @apply text-4xl md:text-5xl leading-tight font-light xl:leading-tight xl:text-6xl selection:bg-white selection:text-black;
+  }
+
+  h3 {
+    @apply text-3xl leading-tight font-light xl:leading-tight xl:text-4xl selection:bg-white selection:text-black;
+  }
+
+  h4 {
+    @apply text-xl lg:text-2xl font-light lg:leading-relaxed selection:bg-white selection:text-black;
+  }
+}
+
+.navbar {
+  @apply flex flex-row justify-end px-10 py-10 h-32 bg-black;
+
+  &--title {
+    @apply self-center text-xl md:text-2xl font-normal tracking-wide;
+  }
+}
